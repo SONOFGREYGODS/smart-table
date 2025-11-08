@@ -16,7 +16,7 @@ export function initFiltering(elements) {
     if (action && action.name === "clear") {
       const fieldName = action.dataset.field;
       if (fieldName) {
-        const filterElement = elements[fieldName];
+        const filterElement = action.parentElement.querySelector('input');
         if (filterElement) {
           filterElement.value = "";
         }

@@ -9,7 +9,7 @@ import { initSorting } from "./components/sorting.js";
 import { initFiltering } from "./components/filtering.js";
 import { initSearching } from "./components/searching.js";
 
-const API = initData(sourceData);
+const API = initData();
 function collectState() {
   const state = processFormData(new FormData(sampleTable.container));
   const rowsPerPage = parseInt(state.rowsPerPage);
